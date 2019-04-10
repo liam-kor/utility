@@ -1,0 +1,17 @@
+{
+    "name": "luna-dev/utilities",
+    "authors": [
+        {
+            "name": "jhkang",
+            "email": "jhkang@lunasoft.co.kr"
+        }
+    ],
+    "require": {
+        "ixudra/curl": "^6.16",
+    },
+    "autoload": {
+        "psr-4" : {
+            "LunaDev\\Utility\\" : "src"
+         }
+    }
+}
