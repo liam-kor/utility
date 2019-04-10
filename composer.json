@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "ixudra/curl": "^6.16",
+        "ixudra/curl": "^6.16"
     },
     "autoload": {
         "psr-4" : {
