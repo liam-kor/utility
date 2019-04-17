@@ -23,7 +23,12 @@ class LunaLogger
         
         $request_params = json_encode(request()->all());
         $request_url = request()->fullurl();
-        $transaction_id = md5(uniqid(rand(), true));
+        
+        $transaction_id = request()->input('transaction_id');
+        
+        if (!$transaction_id) {
+            $transaction_id = md5(uniqid(rand(), true));
+        }
         
         config(['app.transaction_id' => $transaction_id]);
         
